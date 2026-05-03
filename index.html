@@ -1,98 +1,88 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>天一的個人網站</title>
-    
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-
-        .photo {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 6px solid white;
-            margin: 20px auto;
-            object-fit: cover;
-        }
-
-        button {
-            margin: 30px 10px;
-            padding: 15px 35px;
-            font-size: 1.1rem;
-            background: white;
-            color: #667eea;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            transform: scale(1.05);
-            background: #f0f0f0;
-        }
-
-        .section {
-            margin: 60px 0;
-            padding: 30px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>👋 哈囉！我是 天一</h1>
-            <p class="subtitle">大學生｜AI 愛好者｜正在學習網頁開發</p></p>
 
-        <!-- 這裡放你的照片 -->
-        <img src="https://i.postimg.cc/9MLDF1T7/joker.png" alt="我的照片" class="photo">
+<!-- Navbar -->
+<header class="navbar">
+  <h1 class="logo">MyPortfolio</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-        <div class="section">
-            <h2>關於我</h2>
-            <p>目前正在從零學習網頁開發，目標是成為能接案的 AI + 網頁開發者。</p>
-        </div>
+<!-- Hero -->
+<section id="home" class="hero fade-in">
+  <div>
+    <h2>Hi, I'm <span>BEN</span></h2>
+    <p>Creative Designer | UI/UX | Branding</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
 
-        <div class="section">
-            <h2>目前正在學習</h2>
-            <p>HTML、CSS、Tailwind、Next.js、AI 工具應用</p>
-        </div>
-        <div class="section">
-            <h2>我的技能</h2>
-            <p>✅ HTML & CSS<br>
-               ✅ Tailwind CSS<br>
-               ✅ AI 工具使用（ChatGPT、Grok、Leonardo.ai）<br>
-               ✅ 正在學習 Next.js</p>
-        </div>
-        <button onclick="alert('感謝你的訪問！')">聯絡我</button>
-        <button onclick="window.location.href='https://github.com'">我的 GitHub</button>
+<!-- Projects -->
+<section id="projects" class="section fade-in">
+  <h2>My Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?1">
+      <div class="card-info">
+        <h3>Project One</h3>
+        <p>UI Design</p>
+      </div>
     </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?2">
+      <div class="card-info">
+        <h3>Project Two</h3>
+        <p>Branding</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?3">
+      <div class="card-info">
+        <h3>Project Three</h3>
+        <p>Illustration</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section fade-in">
+  <h2>About Me</h2>
+  <p>
+    我是一名設計師，專注於UI/UX與品牌設計。喜歡創造簡潔、有質感的視覺體驗。
+  </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section fade-in">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
