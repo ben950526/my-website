@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天一的個人網站</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin: 20px auto;
+            object-fit: cover;
+        }
+
+        button {
+            margin: 30px 10px;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: #f0f0f0;
+        }
+
+        .section {
+            margin: 60px 0;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 哈囉！我是 天一</h1>
+            <p class="subtitle">大學生｜AI 愛好者｜正在學習網頁開發</p></p>
+
+        <!-- 這裡放你的照片 -->
+        <img src="https://i.postimg.cc/9MLDF1T7/joker.png" alt="我的照片" class="photo">
+
+        <div class="section">
+            <h2>關於我</h2>
+            <p>目前正在從零學習網頁開發，目標是成為能接案的 AI + 網頁開發者。</p>
+        </div>
+
+        <div class="section">
+            <h2>目前正在學習</h2>
+            <p>HTML、CSS、Tailwind、Next.js、AI 工具應用</p>
+        </div>
+        <div class="section">
+            <h2>我的技能</h2>
+            <p>✅ HTML & CSS<br>
+               ✅ Tailwind CSS<br>
+               ✅ AI 工具使用（ChatGPT、Grok、Leonardo.ai）<br>
+               ✅ 正在學習 Next.js</p>
+        </div>
+        <button onclick="alert('感謝你的訪問！')">聯絡我</button>
+        <button onclick="window.location.href='https://github.com'">我的 GitHub</button>
+    </div>
+</body>
+</html>
